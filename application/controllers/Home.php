@@ -82,6 +82,8 @@ class Home extends CI_Controller {
             $bodyData['services'] = $this->ServicesModel->getBy('server', $bodyData['server']['id'], true);
             $bodyData['purchases'] = $this->PurchasesModel->getBy('server', $bodyData['server']['id'], true);
 
+            if ($bodyData['services']) {
+ 
             for ($i = 0; $i < count($bodyData['services']); $i++) {
                 if ($bodyData['services'][$i]['smsConfig'] != null) {
                     $bodyData['services'][$i]['smsConfig'] = json_decode($bodyData['services'][$i]['smsConfig'], true);
@@ -95,7 +97,7 @@ class Home extends CI_Controller {
                     }
                 }
             }
-
+        }
             $this->load->model('PaymentsModel');
 
             $pp = $this->PaymentsModel->get(5);
