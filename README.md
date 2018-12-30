@@ -1,4 +1,4 @@
-Aktualna wersja: **1.0.1**
+Aktualna wersja: **1.0.2**
 
 [Instrukcja aktualizacji skryptu do najnowszej wersji](https://github.com/Verlikylos/vMCShop/wiki/Instrukcja-aktualizacji-skryptu-do-najnowszej-wersji)
 
@@ -61,7 +61,7 @@ Resztę można zobaczyć w demie ;)
 <br>
 
 ### Wymagania
- - PHP 5.6
+ - PHP 7.2
  - MySQL
  - Aktywne mod_rewrite
  
